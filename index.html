@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="banner">
+        <h1 id="title">
+            freeCodeCamp Survey Form
+        </h1>
+        <p id="description">
+            thank you for taking the time to help us improve the platform
+        </p>
+    </div>
+    <form  id="survey-form">
+        <label for="name" id="name-label">Name : </label><br>
+        <input type="text" name="Name" id="name" placeholder="Enter your name here : " required><br>
+        <label for="email" id="email-label">Email : </label><br>
+        <input type="email" name="email" id="email" placeholder="Enter your email here : " required><br>
+        <label for="age" id="number-label">Age : </label><br>
+        <input type="number" name="age" id="number" placeholder="Enter your age here : " min="10" max="99"><br>
+        <label for="role">Which option best describes your current role?</label><br>
+        <select name="role" id="dropdown">
+            <option value="student">Student</option>
+            <option value="fulltime-job">Full time Job</option>
+            <option value="fulltime-learner">Full time Learner</option>
+            <option value="other">Other</option>
+        </select><br>
+        <label>Would you recommend freeCodeCamp to a friend?</label>
+        <section class="radio">
+            <input type="radio" name="recommend" id="definitely" value="definitely">
+            <div class="icons">
+                <span class="circle">
+                    <i data-feather="circle"></i>
+                </span>
+                <span class="check-circle">
+                    <i data-feather="check-circle"></i>
+                </span>
+            </div>
+            <label for="definitely"  id="defintely">Definitely</label>
+        </section>
+        <section class="radio">
+            <input type="radio" name="recommend" id="maybe" value="maybe">
+            <div class="icons">
+                <span class="circle">
+                    <i data-feather="circle"></i>
+                </span>
+                <span class="check-circle">
+                    <i data-feather="check-circle"></i>
+                </span>
+            </div>
+            <label for="maybe" id="maybe">Maybe</label>
+        </section>
+        <section class="radio">
+            <input type="radio" name="recommend" id="not-sure" value="not-sure">
+            <div class="icons">
+                <span class="circle">
+                    <i data-feather="circle"></i>
+                </span>
+                <span class="check-circle">
+                    <i data-feather="check-circle"></i>
+                </span>
+            </div>
+            <label for="not-sure" id="not-sure">Not Sure</label>
+        </section>
+        <label for="feature">Which option best describes your current role?</label><br>
+        <select name="feature" id="dropdown">
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="open-source">Open Source</option>
+        </select><br>
+        <label>What would you like to see improved?</label>
+        <section class="radio">
+            <input type="checkbox" name="improve" id="frontend" value="frontend">
+            <div class="icons">
+                <span class="circle">
+                    <i data-feather="square"></i>
+                </span>
+                <span class="check-circle">
+                    <i data-feather="check-square"></i>
+                </span>
+            </div>
+            <label for="frontend"  id="frontend">Front-end Projects</label>
+        </section>
+        <section class="radio">
+            <input type="checkbox" name="improve" id="backend" value="backend">
+            <div class="icons">
+                <span class="circle">
+                    <i data-feather="square"></i>
+                </span>
+                <span class="check-circle">
+                    <i data-feather="check-square"></i>
+                </span>
+            </div>
+            <label for="backend" id="backend">Back-end Projects</label>
+        </section>
+        <section class="radio">
+            <input type="checkbox" name="improve" id="data" value="data">
+            <div class="icons">
+                <span class="circle">
+                    <i data-feather="square"></i>
+                </span>
+                <span class="check-circle">
+                    <i data-feather="check-square"></i>
+                </span>
+            </div>
+            <label for="data" id="data">Data Visualization</label>
+        </section>
+        <section class="radio">
+            <input type="checkbox" name="improve" id="challenges" value="challenges">
+            <div class="icons">
+                <span class="circle">
+                    <i data-feather="square"></i>
+                </span>
+                <span class="check-circle">
+                    <i data-feather="check-square"></i>
+                </span>
+            </div>
+            <label for="challenges" id="challenges">Challenges</label>
+        </section>
+        <section class="radio">
+            <input type="checkbox" name="improve" id="open-source" value="open-source">
+            <div class="icons">
+                <span class="circle">
+                    <i data-feather="square"></i>
+                </span>
+                <span class="check-circle">
+                    <i data-feather="check-square"></i>
+                </span>
+            </div>
+            <label for="open-source" id="open-source">Open Source Community</label>
+        </section>
+        <section class="radio">
+            <input type="checkbox" name="improve" id="gitter" value="gitter">
+            <div class="icons">
+                <span class="circle">
+                    <i data-feather="square"></i>
+                </span>
+                <span class="check-circle">
+                    <i data-feather="check-square"></i>
+                </span>
+            </div>
+            <label for="gitter" id="gitter">Gitter Help Rooms</label>
+        </section>
+        <section class="radio">
+            <input type="checkbox" name="improve" id="videos" value="videos">
+            <div class="icons">
+                <span class="circle">
+                    <i data-feather="square"></i>
+                </span>
+                <span class="check-circle">
+                    <i data-feather="check-square"></i>
+                </span>
+            </div>
+            <label for="videos" id="videos">Videos</label>
+        </section>
+        <section class="radio">
+            <input type="checkbox" name="improve" id="meetups" value="meetups">
+            <div class="icons">
+                <span class="circle">
+                    <i data-feather="square"></i>
+                </span>
+                <span class="check-circle">
+                    <i data-feather="check-square"></i>
+                </span>
+            </div>
+            <label for="meetups" id="meetups">City Meetups</label>
+        </section>
+        <section class="radio">
+            <input type="checkbox" name="improve" id="wiki" value="wiki">
+            <div class="icons">
+                <span class="circle">
+                    <i data-feather="square"></i>
+                </span>
+                <span class="check-circle">
+                    <i data-feather="check-square"></i>
+                </span>
+            </div>
+            <label for="wiki" id="wiki">Wiki</label>
+        </section>
+        <section class="radio">
+            <input type="checkbox" name="improve" id="forums" value="forums">
+            <div class="icons">
+                <span class="circle">
+                    <i data-feather="square"></i>
+                </span>
+                <span class="check-circle">
+                    <i data-feather="check-square"></i>
+                </span>
+            </div>
+            <label for="forums" id="forums">Forums</label>
+        </section>
+        <section class="radio">
+            <input type="checkbox" name="improve" id="courses" value="courses">
+            <div class="icons">
+                <span class="circle">
+                    <i data-feather="square"></i>
+                </span>
+                <span class="check-circle">
+                    <i data-feather="check-square"></i>
+                </span>
+            </div>
+            <label for="courses" id="courses">Additional Courses</label>
+        </section>
+        <label for="comments">Any comments or suggestions?</label><br>
+        <textarea name="comments"  placeholder="Enter your comment here..."></textarea><br>
+        <div class="button">
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+</body>
+
+<script src="https://unpkg.com/feather-icons"></script>
+<script>
+    feather.replace()
+</script>
+</html>

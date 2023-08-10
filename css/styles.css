@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+*{
+    font-family: 'dm sans', calibri;
+    margin:0;
+    padding:0;
+}
+
+:root{
+    --theme-color:turquoise;
+}
+
+body{
+    background:#202020;
+    color:white;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+body h1{
+    color:var(--theme-color);
+    text-align: center;
+    font-size: 2.25rem;
+    margin:2rem 0;
+}
+
+body p#description{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.16rem;
+}
+
+form#survey-form{
+    margin:1.4rem 0;
+    padding:3rem 4rem;
+    box-shadow: .13rem .13rem .9rem rgba(44, 50, 51, 0.226);
+    border-radius: .5rem;
+}
+
+form label{
+    font-size: 1.13rem;
+}
+
+form section label{
+    font-size: 1.1rem;
+    margin-bottom: .34rem;
+}
+
+form input, 
+form select,
+form textarea,
+form button{
+    background-color: #202020;
+    outline: none;
+    border: 2px solid var(--theme-color);
+    color:white;
+    padding:.46rem .4rem;
+    font-size: 1.08rem;
+    margin-bottom: 1rem;
+    margin-top: .3rem;
+    width: 25rem;
+    border-radius: 5px;
+}
+
+form textarea{
+    min-height: 4rem;
+}
+
+form button{
+    background-color: var(--theme-color);
+    color:#202020;
+    font-weight: 500;
+}
+
+div.button{
+    display: grid;
+    justify-content: center;
+}
+
+form input[type = "radio"],
+form input[type = "checkbox"]{
+    width: .7rem;
+    display: none;
+}
+
+form section.radio div.icons span.circle{
+    display: grid;
+    transform: scale(.7);
+}
+
+form section.radio div.icons span.check-circle{
+    display: none;
+    align-content: center;
+}
+
+form section input[type="radio"]:checked + div.icons span.check-circle,
+form section input[type="checkbox"]:checked + div.icons span.check-circle{
+    display: grid;
+    transform: scale(.7);
+    color: var(--theme-color);
+}
+
+form section.radio{
+    display: flex;
+    margin:.3rem 0;
+}
+
+form section span.check-circle,
+form section input[type="radio"]:checked + div.icons span.circle,
+form section input[type="checkbox"]:checked + div.icons span.circle{
+    display: none;
+}
+
+@media screen and (max-width:720px) {
+    form input,
+    form select,
+    form textarea,
+    form button{
+        width: 80vw;
+    }
+
+    h1#title,
+    p#description{
+        width: 90vw;
+    }
+
+    div.banner{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+    }
+}
